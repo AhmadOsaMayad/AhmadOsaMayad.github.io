@@ -1,0 +1,12 @@
+title: Ahmad Osama Mayad
+description: Mobile Application Developer | Flutter Specialist | CS Graduate
+theme: minima
+show_downloads: false
+
+# Social links
+github_username: AhmadOsaMayad
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
