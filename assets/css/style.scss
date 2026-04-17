@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Make logo/profile picture circular
+header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+// Optional: Center the image in sidebar
+header {
+  text-align: center;
+}
