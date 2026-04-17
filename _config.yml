@@ -1,18 +1,10 @@
 title: Ahmad Osama Mayad
 description: Mobile Application Developer | Flutter Specialist | CS Graduate
-theme: minima
+theme: jekyll-theme-minimal
 show_downloads: false
-
-# Minima settings
-minima:
-  skin: classic
-  social_links:
-    - { platform: github, user_url: "https://github.com/AhmadOsaMayad" }
 
 # Social links
 github_username: AhmadOsaMayad
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
