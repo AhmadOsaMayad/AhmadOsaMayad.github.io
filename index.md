@@ -1,7 +1,10 @@
 ---
-layout: home
-title: Home
+layout: default
 ---
+
+# 👋 Hi, I'm Ahmad Osama Mayad
+
+**Mobile Application Developer | Flutter Specialist | CS Graduate**
 
 *"Building apps and teaching English – I bring the same passion for clear communication and creative problem-solving to every project."*
 
