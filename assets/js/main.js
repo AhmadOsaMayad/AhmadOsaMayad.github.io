@@ -26,25 +26,28 @@
     }
   }
   
-  function drawParticles() {
-    ctx.clearRect(0, 0, width, height);
-    ctx.font = '14px "Space Grotesk", monospace';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
+function drawParticles() {
+  ctx.clearRect(0, 0, width, height);
+  ctx.font = '14px "Space Grotesk", monospace';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  
+  const colors = ['#02569B', '#FF6F00', '#7c3aed', '#0d9488', '#3d2a5c'];
+  
+  particles.forEach(p => {
+    p.x += p.vx;
+    p.y += p.vy;
     
-    particles.forEach(p => {
-      p.x += p.vx;
-      p.y += p.vy;
-      
-      if (p.x < 0 || p.x > width) p.vx *= -1;
-      if (p.y < 0 || p.y > height) p.vy *= -1;
-      
-      ctx.fillStyle = `rgba(10, 10, 10, ${p.opacity})`;
-      ctx.fillText(p.glyph, p.x, p.y);
-    });
+    if (p.x < 0 || p.x > width) p.vx *= -1;
+    if (p.y < 0 || p.y > height) p.vy *= -1;
     
-    requestAnimationFrame(drawParticles);
-  }
+    const colorIndex = Math.floor(Math.random() * colors.length);
+    ctx.fillStyle = colors[colorIndex] + Math.floor(p.opacity * 255).toString(16).padStart(2, '0').slice(0, 2);
+    ctx.fillText(p.glyph, p.x, p.y);
+  });
+  
+  requestAnimationFrame(drawParticles);
+}
   
   function resizeCanvas() {
     width = window.innerWidth;
