@@ -1,11 +1,4 @@
 title: Ahmad Osama Mayad
-description:
-theme: jekyll-theme-minimal
-show_downloads: false
-logo: /assets/images/profile.jpg
-
-# Social links
-github_username: AhmadOsaMayad
-
-# Build settings
-markdown: kramdown
+description: Mobile Application Developer | Flutter Specialist
+baseurl: ""
+url: "https://ahmadosamayad.github.io"
