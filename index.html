@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Ahmad Osama Mayad · Flutter Specialist</title>
+  
+  <!-- Fonts: 2089 typography - bold, architectural -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <!-- Particle canvas - subtle code-like glyphs -->
+  <canvas id="particle-canvas"></canvas>
+  
+  <div class="layout">
+    
+    <!-- Sidebar - Fixed, architectural -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="profile-block magnetic" data-strength="0.3">
+          <div class="profile-image-wrapper">
+            <img src="/assets/images/profile.jpg" alt="Ahmad Osama Mayad" class="profile-image">
+            <div class="profile-ring"></div>
+          </div>
+        </div>
+        
+        <div class="identity">
+          <h1 class="name">Ahmad<br>Osama<br>Mayad</h1>
+          <div class="title-stack">
+            <span class="title-primary">Mobile Developer</span>
+            <span class="title-secondary">Flutter Specialist</span>
+          </div>
+        </div>
+        
+        <div class="sidebar-divider"></div>
+        
+        <div class="bio-compact">
+          <p>Building mobile experiences that solve real problems. CS Graduate. Prompt Engineer.</p>
+        </div>
+        
+        <div class="sidebar-divider"></div>
+        
+        <nav class="sidebar-nav">
+          <a href="#work" class="nav-link magnetic" data-strength="0.2">
+            <span class="nav-icon"><i class="fas fa-code"></i></span>
+            <span class="nav-text">Work</span>
+          </a>
+          <a href="#craft" class="nav-link magnetic" data-strength="0.2">
+            <span class="nav-icon"><i class="fas fa-layer-group"></i></span>
+            <span class="nav-text">Craft</span>
+          </a>
+          <a href="#projects" class="nav-link magnetic" data-strength="0.2">
+            <span class="nav-icon"><i class="fas fa-cube"></i></span>
+            <span class="nav-text">Projects</span>
+          </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span>Open to work</span>
+          </div>
+          <div class="contact-mini">
+            <a href="mailto:ao699168@gmail.com" class="contact-link magnetic" data-strength="0.15">ao699168@gmail.com</a>
+            <a href="tel:+967774188043" class="contact-link magnetic" data-strength="0.15">+967 774 188 043</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/AhmadOsaMayad" class="social-link magnetic" data-strength="0.15" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://ahmadosamayad.github.io" class="social-link magnetic" data-strength="0.15">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    
+    <!-- Main Content - Scrollable, narrative-driven -->
+    <main class="main-content">
+      
+      <!-- Hero statement - typography as architecture -->
+      <section class="hero-statement">
+        <div class="statement-large">
+          <span class="statement-line">Building</span>
+          <span class="statement-line"><em>mobile</em> experiences</span>
+          <span class="statement-line">that solve</span>
+          <span class="statement-line">real problems</span>
+        </div>
+        <div class="statement-quote">
+          "The same passion for clear communication I brought to teaching English, now I bring to every line of code."
+        </div>
+      </section>
+      
+      <!-- Work / Experience - Timeline style -->
+      <section id="work" class="section-block">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2024 – Present</div>
+              <h3 class="timeline-title">Flutter Specialist</h3>
+              <p class="timeline-subtitle">Independent & Freelance</p>
+              <ul class="timeline-details">
+                <li>Building production-ready mobile applications with Flutter</li>
+                <li>REST API integration and Firebase backend architecture</li>
+                <li>AI Prompt Engineering – Gemini certification in progress</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2024</div>
+              <h3 class="timeline-title">Dallal – Graduation Project</h3>
+              <p class="timeline-subtitle">94% Grade · AI-Powered Real Estate</p>
+              <ul class="timeline-details">
+                <li>Yemen real estate platform with AI price prediction</li>
+                <li>Flutter frontend with custom ML integration</li>
+                <li>Led development from concept to deployment</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2019 – 2023</div>
+              <h3 class="timeline-title">English Teacher → Developer</h3>
+              <p class="timeline-subtitle">Career Transition</p>
+              <ul class="timeline-details">
+                <li>Taught English while self-learning programming</li>
+                <li>Arabic literary writer · Bilingual communication</li>
+                <li>B.Sc. Computer Science (Graduated)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Craft / Tech Stack - Magnetic grid -->
+      <section id="craft" class="section-block">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Craft</h2>
+        </div>
+        
+        <div class="craft-grid">
+          <div class="craft-category">
+            <h4 class="craft-label">Mobile Core</h4>
+            <div class="craft-items">
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fab fa-flutter"></i>Flutter</span>
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fab fa-dart"></i>Dart</span>
+            </div>
+          </div>
+          
+          <div class="craft-category">
+            <h4 class="craft-label">Backend & Data</h4>
+            <div class="craft-items">
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fas fa-fire"></i>Firebase</span>
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fas fa-cloud"></i>REST APIs</span>
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fas fa-database"></i>SQL</span>
+            </div>
+          </div>
+          
+          <div class="craft-category">
+            <h4 class="craft-label">Languages & Tools</h4>
+            <div class="craft-items">
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fas fa-code"></i>C++ / C#</span>
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fab fa-git-alt"></i>Git</span>
+              <span class="craft-item magnetic" data-strength="0.2"><i class="fas fa-vial"></i>Postman</span>
+            </div>
+          </div>
+          
+          <div class="craft-category highlight">
+            <h4 class="craft-label">Specialty</h4>
+            <div class="craft-items">
+              <span class="craft-item magnetic large" data-strength="0.2"><i class="fas fa-robot"></i>Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Projects - Card grid with depth -->
+      <section id="projects" class="section-block">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        
+        <div class="project-grid">
+          <a href="https://github.com/AhmadOsaMayad/dallal_proj" class="project-card magnetic scroll-reveal" data-strength="0.15" target="_blank">
+            <div class="project-glow"></div>
+            <div class="project-content">
+              <h3 class="project-name">Dallal</h3>
+              <p class="project-desc">Real estate platform with AI price prediction for Yemen's market</p>
+              <div class="project-tech">Flutter · REST APIs · ML</div>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+          
+          <a href="https://github.com/AhmadOsaMayad/chat-app" class="project-card magnetic scroll-reveal" data-strength="0.15" target="_blank">
+            <div class="project-glow"></div>
+            <div class="project-content">
+              <h3 class="project-name">Chat App</h3>
+              <p class="project-desc">Real-time messaging with user authentication</p>
+              <div class="project-tech">Flutter · Firebase</div>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+          
+          <a href="https://github.com/AhmadOsaMayad/bookly_app" class="project-card magnetic scroll-reveal" data-strength="0.15" target="_blank">
+            <div class="project-glow"></div>
+            <div class="project-content">
+              <h3 class="project-name">Bookly App</h3>
+              <p class="project-desc">Browse, search, and manage your book collection</p>
+              <div class="project-tech">Flutter · REST APIs</div>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+          
+          <a href="https://github.com/AhmadOsaMayad/notes_app" class="project-card magnetic scroll-reveal" data-strength="0.15" target="_blank">
+            <div class="project-glow"></div>
+            <div class="project-content">
+              <h3 class="project-name">Notes App</h3>
+              <p class="project-desc">Clean CRUD note-taking with offline local storage</p>
+              <div class="project-tech">Flutter · Hive</div>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+          
+          <a href="https://github.com/AhmadOsaMayad/toku_app" class="project-card magnetic scroll-reveal" data-strength="0.15" target="_blank">
+            <div class="project-glow"></div>
+            <div class="project-content">
+              <h3 class="project-name">Toku App</h3>
+              <p class="project-desc">Learn English-Japanese vocabulary with audio</p>
+              <div class="project-tech">Flutter</div>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+          </a>
+        </div>
+        
+        <div class="currently-banner scroll-reveal">
+          <div class="currently-content">
+            <span class="currently-label">Currently</span>
+            <span class="currently-text">Deepening Flutter expertise · Completing Gemini Prompt Engineering certification · Looking for first open-source contribution</span>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="main-footer">
+        <p>© 2026 Ahmad Osama Mayad · Remote-ready · Sana'a, Yemen</p>
+      </footer>
+    </main>
+  </div>
+  
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
