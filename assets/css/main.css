@@ -500,17 +500,29 @@ body {
 }
 
 .craft-item:hover i {
-  color: white;
+  color: white !important;
 }
 
 .craft-category:nth-child(2) .craft-item i { color: var(--accent-fire); }
-.craft-category:nth-child(2) .craft-item:hover { background: var(--accent-fire); border-color: var(--accent-fire); box-shadow: 0 8px 16px rgba(255, 111, 0, 0.2); }
+.craft-category:nth-child(2) .craft-item:hover { 
+  background: var(--accent-fire); 
+  border-color: var(--accent-fire); 
+  box-shadow: 0 8px 16px rgba(255, 111, 0, 0.2); 
+}
 
 .craft-category:nth-child(3) .craft-item i { color: var(--accent-teal); }
-.craft-category:nth-child(3) .craft-item:hover { background: var(--accent-teal); border-color: var(--accent-teal); box-shadow: 0 8px 16px rgba(13, 148, 136, 0.2); }
+.craft-category:nth-child(3) .craft-item:hover { 
+  background: var(--accent-teal); 
+  border-color: var(--accent-teal); 
+  box-shadow: 0 8px 16px rgba(13, 148, 136, 0.2); 
+}
 
 .craft-category.highlight .craft-item i { color: var(--accent-purple); }
-.craft-category.highlight .craft-item:hover { background: var(--accent-purple); border-color: var(--accent-purple); box-shadow: 0 8px 16px rgba(124, 58, 237, 0.2); }
+.craft-category.highlight .craft-item:hover { 
+  background: var(--accent-purple); 
+  border-color: var(--accent-purple); 
+  box-shadow: 0 8px 16px rgba(124, 58, 237, 0.2); 
+}
 
 .craft-item.large {
   font-size: 1.2rem;
