@@ -52,6 +52,7 @@ body {
   min-height: 100vh;
   position: relative;
   z-index: 2;
+  align-items: stretch;
 }
 
 /* Sidebar — warm, vibrant */
@@ -67,12 +68,33 @@ body {
   display: flex;
   flex-direction: column;
   padding: 48px 32px;
+  overflow-y: auto; 
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-flutter) var(--border-light);
+}
+
+/* Custom scrollbar for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-flutter);
 }
 
 .sidebar-inner {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
 }
 
 .profile-block {
